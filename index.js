@@ -33,7 +33,7 @@ function addMember() {
             name: "email"
         },
         {
-            type: "list",
+            type: 'list',
             message: "Please select this member's role",
             choices: ["Manager", "Engineer", "Intern"],
             name: "role"

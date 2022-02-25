@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/Esilfa/Team-Profile-Generator#readme",
   "dependencies": {
-    "jest": "^27.5.1"
+    "jest": "^27.5.1",
+    "test": "^0.6.0"
   }
 }
