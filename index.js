@@ -83,7 +83,7 @@ function engineer (originalResults){
             name: "addlAnswers"
         }
     ]).then(function(results){
-        const newEngineer = new Engineer(originalResults.name, originalResults.id, originalResults.email, results.github;
+        const newEngineer = new Engineer(originalResults.name, originalResults.id, originalResults.email, results.github);
         employees.push(newEngineer);
         if(results.addAnswers === true){
             addMember();
