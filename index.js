@@ -9,6 +9,7 @@ const Manager = require('./lib/Manager');
 
 const OUTPUT_DIR = path.resolve(__dirname, " src-templete");
 const outputPath = path.join(OUTPUT_DIR, "index.html")
+const ViewHTML = require ("./lib/ViewHTML")
 
 
 
@@ -113,13 +114,14 @@ function manager (originalResults){
         } else {
             createTeam()
         }
+    
     })
 }
 function createTeam() {
     if(!fs.existsSync(OUTPUT_DIR)){
         fs.mkdirSync(OUTPUT_DIR)
     }
-    fs.writeFileSync(outputPath, newHTML(employees), "utf-8")
+    fs.writeFileSync(outputPath, ViewHTML (employees), "utf-8")
 }
 
 
